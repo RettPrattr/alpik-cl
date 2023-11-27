@@ -1,0 +1,70 @@
+
+    
+.button 
+    padding: 13px 20px
+    width: fit-content !important
+    height: fit-content !important
+    border-radius: 10px
+    font-weight: 500
+    margin-right: 30px
+    border: 0
+    cursor: pointer
+    &.white 
+        background: $White
+        border-bottom: 1px solid rgba(255, 255, 255, 0.25)
+        color: $Main
+        &:not(.secondary):hover 
+            background: $Gray
+    &.main 
+        background: $Main 
+        color: $White
+        border-radius: 10px
+        &:not(.secondary):hover 
+            background: $Main
+            color: $White
+    &.secondary 
+        padding: 10px 0px
+        font-weight: 400
+        background: none
+        box-shadow: none
+        border-radius: 0 !important
+        opacity: 0.69
+        position: relative
+        &::after, &::before 
+            bottom: 5px
+        &::before  
+            width: 0px 
+            opacity: 1 
+        &:hover  
+            opacity: 1 
+            &::before  
+                width: 100%  
+        &.white  
+            color: $White 
+            &::after, &::before  
+                background: $White 
+        &.black  
+            color: $Black 
+            &::after, &::before  
+                background: $Black   
+        &.main  
+            color: $Main
+
+
+/// FORM-BUTTON
+
+.form-button
+    height: 'auto'
+    background-color: #70BC24
+    border-radius: 10px
+    box-shadow: none
+    transition: all 0.2s ease-out
+    &:hover
+        background-color: #61a31f
+    a
+        color: #fff
+        display: flex
+        justify-content: center
+        align-items: center
+        padding: 13px 20px
+        font-weight: 700 !important
